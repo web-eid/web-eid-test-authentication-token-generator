@@ -1,0 +1,4 @@
+*.swp
+signing-input
+.vscode/
+venv/
