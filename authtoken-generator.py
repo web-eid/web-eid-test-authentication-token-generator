@@ -26,6 +26,7 @@ SOFTWARE.
 import base64
 import hashlib
 import json
+import time
 from lib.pkcs11_tool import PKCS11ElectronicID
 
 # Leave empty to read from card or add as base64-encoded to use a modified certificate
@@ -41,8 +42,8 @@ PAYLOAD = {
         "https://ria.ee",
         "urn:cert:sha-256:6f0df244e4a856b94b3b3b47582a0a51a32d674dbc7107211ed23d4bec6d9c72",
     ],
-    "exp": "1586871169",
-    "iat": "1586870869",
+    "exp": f"{time.time() + 20 * 60}".split(".")[0],
+    "iat": f"{time.time()}".split(".")[0],
     "iss": "web-eid app v0.9.0-1-ge6e89fa",
     "nonce": "12345678123456781234567812345678",
     "sub": "JÕEORG,JAAK-KRISTJAN,38001085718",
