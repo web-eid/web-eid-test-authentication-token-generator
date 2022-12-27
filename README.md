@@ -1,5 +1,7 @@
 # Web eID test authentication token generator
 
+**DEPRECATED, ONLY VALID FOR LEGACY WEB EID TOKEN v1 FORMAT.**
+
 A Python script that generates arbitrary Web eID authentication tokens for
 testing using either `pkcs11-tool` or Estonian Mobile-ID.
 
